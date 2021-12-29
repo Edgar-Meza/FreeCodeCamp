@@ -1,0 +1,19 @@
+main {
+  background-color: #c1c1c1;
+  border-radius: 15px;
+  text-align: center;
+  padding-top: 50px;
+}
+main figure {
+  background-color: #FFFFFF;
+  width: 97%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 20px;
+  padding-bottom: 25px;
+}
+main figure figcaption {
+  margin-top: 15px;
+}
+
+/*# sourceMappingURL=style.css.map */
