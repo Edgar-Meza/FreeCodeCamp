@@ -1,8 +1,18 @@
+@import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&family=Roboto:wght@100;300;500&family=Spartan:wght@400;500;700&display=swap");
+* {
+  font-family: "Kumbh Sans", sans-serif;
+  font-family: "Roboto", sans-serif;
+  font-family: "Spartan", sans-serif;
+}
+
 main {
-  background-color: #c1c1c1;
-  border-radius: 15px;
+  background-color: #dedede;
+  border-radius: 10px;
   text-align: center;
   padding-top: 50px;
+}
+main h1 {
+  color: #606060;
 }
 main figure {
   background-color: #FFFFFF;
@@ -14,6 +24,42 @@ main figure {
 }
 main figure figcaption {
   margin-top: 15px;
+  font-size: 14px;
+}
+main h2 {
+  font-size: 18px;
+  margin-top: 5%;
+  margin-bottom: 5%;
+  color: #404040;
+}
+main ul {
+  width: 40%;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: left;
+  line-height: 35px;
+  color: #404040;
+  font-size: 13px;
+}
+main ul li {
+  margin-bottom: 20px;
+  line-height: 20px;
+}
+main blockquote {
+  width: 40%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 5%;
+  text-align: justify;
+  font-style: italic;
+  font-size: 15px;
+  color: #404040;
+}
+main blockquote:after {
+  content: '"';
+}
+main blockquote:before {
+  content: '"';
 }
 
 /*# sourceMappingURL=style.css.map */
