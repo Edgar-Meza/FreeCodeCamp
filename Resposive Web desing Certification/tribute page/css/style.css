@@ -14,19 +14,19 @@ body {
   margin-right: auto;
 }
 
-main {
+#main {
   background-color: #dedede;
   border-radius: 10px;
   text-align: center;
   padding-top: 50px;
 }
-main h1 {
+#main #title {
   color: #404040;
   max-width: 85%;
   margin-left: auto;
   margin-right: auto;
 }
-main .img-reference {
+#main #img-div {
   background-color: #FFFFFF;
   width: 97%;
   margin-left: auto;
@@ -34,17 +34,20 @@ main .img-reference {
   padding-top: 20px;
   padding-bottom: 25px;
 }
-main .img-reference img {
+#main #img-div #image {
+  display: block;
   max-width: 95%;
+  margin-left: auto;
+  margin-right: auto;
 }
-main .img-reference .img-description {
+#main #img-div #img-caption {
   margin-top: 15px;
   font-size: 14px;
   max-width: 90%;
   margin-left: auto;
   margin-right: auto;
 }
-main h2 {
+#main #tribute-info {
   font-size: 18px;
   margin-top: 5%;
   margin-bottom: 3%;
@@ -53,7 +56,7 @@ main h2 {
   margin-left: auto;
   margin-right: auto;
 }
-main ul {
+#main ul {
   width: 600px;
   margin-left: auto;
   margin-right: auto;
@@ -63,11 +66,11 @@ main ul {
   font-size: 13px;
   max-width: 85%;
 }
-main ul li {
+#main ul li {
   margin-bottom: 20px;
   line-height: 20px;
 }
-main .cite-text {
+#main .cite-text {
   width: 600px;
   margin-left: auto;
   margin-right: auto;
@@ -78,13 +81,13 @@ main .cite-text {
   color: #404040;
   max-width: 85%;
 }
-main .cite-text:after {
+#main .cite-text:after {
   content: '"';
 }
-main .cite-text:before {
+#main .cite-text:before {
   content: '"';
 }
-main .cite-author {
+#main .cite-author {
   color: #404040;
   font-size: 15px;
   width: 600px;
@@ -94,7 +97,7 @@ main .cite-author {
   text-align: left;
   max-width: 85%;
 }
-main .text-reference {
+#main .text-reference {
   font-weight: 700;
   color: #404040;
   margin-top: 35px;
@@ -104,7 +107,7 @@ main .text-reference {
   margin-left: auto;
   margin-right: auto;
 }
-main .text-reference a {
+#main .text-reference #tribute-link {
   color: #6a6af7;
 }
 
