@@ -5,6 +5,15 @@
   font-family: "Spartan", sans-serif;
 }
 
+body {
+  margin-top: 25px;
+  width: 99vw;
+  position: relative;
+  padding: 0;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 main {
   background-color: #dedede;
   border-radius: 10px;
@@ -12,9 +21,12 @@ main {
   padding-top: 50px;
 }
 main h1 {
-  color: #606060;
+  color: #404040;
+  max-width: 85%;
+  margin-left: auto;
+  margin-right: auto;
 }
-main figure {
+main .img-reference {
   background-color: #FFFFFF;
   width: 97%;
   margin-left: auto;
@@ -22,31 +34,41 @@ main figure {
   padding-top: 20px;
   padding-bottom: 25px;
 }
-main figure figcaption {
+main .img-reference img {
+  max-width: 95%;
+}
+main .img-reference .img-description {
   margin-top: 15px;
   font-size: 14px;
+  max-width: 90%;
+  margin-left: auto;
+  margin-right: auto;
 }
 main h2 {
   font-size: 18px;
   margin-top: 5%;
-  margin-bottom: 5%;
+  margin-bottom: 3%;
   color: #404040;
+  max-width: 85%;
+  margin-left: auto;
+  margin-right: auto;
 }
 main ul {
-  width: 40%;
+  width: 600px;
   margin-left: auto;
   margin-right: auto;
   text-align: left;
   line-height: 35px;
   color: #404040;
   font-size: 13px;
+  max-width: 85%;
 }
 main ul li {
   margin-bottom: 20px;
   line-height: 20px;
 }
-main blockquote {
-  width: 40%;
+main .cite-text {
+  width: 600px;
   margin-left: auto;
   margin-right: auto;
   margin-top: 5%;
@@ -54,12 +76,42 @@ main blockquote {
   font-style: italic;
   font-size: 15px;
   color: #404040;
+  max-width: 85%;
 }
-main blockquote:after {
+main .cite-text:after {
   content: '"';
 }
-main blockquote:before {
+main .cite-text:before {
   content: '"';
+}
+main .cite-author {
+  color: #404040;
+  font-size: 15px;
+  width: 600px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: left;
+  max-width: 85%;
+}
+main .text-reference {
+  font-weight: 700;
+  color: #404040;
+  margin-top: 35px;
+  padding-bottom: 30px;
+  font-size: 18px;
+  max-width: 85%;
+  margin-left: auto;
+  margin-right: auto;
+}
+main .text-reference a {
+  color: #6a6af7;
+}
+
+@media (max-width: 576px) {
+  body {
+    background-color: #dedede;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -4,47 +4,68 @@
     font-family: 'Roboto', sans-serif;
     font-family: 'Spartan', sans-serif;
 }
+body {
+    margin-top: 25px;
+    width: 99vw;
+    position: relative;
+    padding: 0;
+    margin-left: auto;
+    margin-right: auto;
+}
 main {
     background-color: #dedede;
     border-radius: 10px;
     text-align: center;
     padding-top: 50px;
     h1 {
-        color: #606060;
+        color: #404040;
+        max-width: 85%;
+        margin-left: auto;
+        margin-right: auto;
     }
-    figure {
+    .img-reference {
         background-color: #FFFFFF;
         width: 97%;
         margin-left: auto;
         margin-right: auto;
         padding-top: 20px;
         padding-bottom: 25px;
-        figcaption {
+        img {
+            max-width: 95%;
+        }
+        .img-description {
             margin-top: 15px;
             font-size: 14px;
+            max-width: 90%;
+            margin-left: auto;
+            margin-right: auto;
         }
     }
     h2 {
         font-size: 18px;
         margin-top: 5%;
-        margin-bottom: 5%;
+        margin-bottom: 3%;
         color: #404040;
+        max-width: 85%;
+        margin-left: auto;
+        margin-right: auto;
     }
     ul {
-        width: 40%;
+        width: 600px;
         margin-left: auto;
         margin-right: auto;
         text-align: left;
         line-height: 35px;
         color: #404040;
         font-size: 13px;
+        max-width: 85%;
         li {
             margin-bottom: 20px;
             line-height: 20px;
         }
     }
-    blockquote {
-        width: 40%;
+    .cite-text {
+        width: 600px;
         margin-left: auto;
         margin-right: auto;
         margin-top: 5%;
@@ -52,11 +73,41 @@ main {
         font-style: italic;
         font-size: 15px;
         color: #404040;
+        max-width: 85%;
     }
-    blockquote:after {
+    .cite-text:after {
         content: "\"";
     }
-    blockquote:before {
+    .cite-text:before {
         content: "\"";
+    }
+    .cite-author {
+        color: #404040;
+        font-size: 15px;
+        width: 600px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: left;
+        max-width: 85%;
+    }
+    .text-reference {
+        font-weight: 700;
+        color: #404040;
+        margin-top: 35px;
+        padding-bottom: 30px;
+        font-size: 18px;
+        max-width: 85%;
+        margin-left: auto;
+        margin-right: auto;
+        a {
+            color: #6a6af7;
+        }
+    }
+}
+
+@media (max-width: 576px) {
+    body {
+        background-color: #dedede;
     }
 }
