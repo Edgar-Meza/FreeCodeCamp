@@ -112,6 +112,10 @@ main .text-reference a {
   body {
     background-color: #dedede;
   }
+
+  main {
+    padding-top: 0;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
