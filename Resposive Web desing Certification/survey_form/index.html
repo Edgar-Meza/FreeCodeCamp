@@ -14,19 +14,19 @@
         <form action="#">
             <div class="text-form">
                 <label for="name">Name</label>
-                <input type="text" name="name" placeholder="Enter your name" id="name">
+                <input type="text" name="name" placeholder="Enter your name" id="name" required>
             </div>
             <div class="text-form">
                 <label for="email">Email</label>
-                <input type="email" name="email" placeholder="Enter your Email" id="email">
+                <input type="email" name="email" placeholder="Enter your Email" id="email" required>
             </div>
             <div class="text-form">
                 <label for="age">Age <span>(optional)</span></label>
-                <input type="number" name="age" placeholder="Age" id="age">
+                <input type="number" name="age" placeholder="Age" id="age" required>
             </div>
             <div class="text-form">
                 <label for="roles">Which option best describes your current role?</label>
-                <select name="roles" id="roles">
+                <select name="roles" id="roles" required>
                     <option value="" disabled selected>Select current role</option>
                     <option value="student">Student</option>
                     <option value="job">Full Time Job</option>
@@ -52,7 +52,7 @@
             </div>
             <div class="text-form">
                 <label for="favorite_feature">What is your favorite feature of freeCodeCamp?</label>
-                <select name="favorite_feature" id="favorite_feature">
+                <select name="favorite_feature" id="favorite_feature" required>
                     <option value="" disabled selected>Select an option</option>
                     <option value="challenges">Challenges</option>
                     <option value="projects">Projects</option>
@@ -111,8 +111,12 @@
                 <span>Any comments or suggestions?</span>
                 <textarea name="comment" id="comment" cols="30" rows="5" placeholder="Enter your comment here..."></textarea>
             </div>
-            <input class="btn-submit" type="submit" value="Submit">
+            <input id="btn-send" class="btn-submit" type="submit" value="Submit">
         </form>
     </main>
+    <script>
+        var subm = document.getElementById('btn-send');
+        subm.addEventListener("click", function(e) { e.preventDefault(); alert("Datos enviados!!!") })
+    </script>
 </body>
 </html>

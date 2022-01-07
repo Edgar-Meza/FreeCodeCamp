@@ -18,10 +18,12 @@ main {
 }
 main h1 {
   font-weight: 400;
-  font-size: 2em;
+  font-size: 2.2em;
   text-align: center;
-  color: #e5e5e5;
+  color: #FFFFFF;
   margin: 0;
+  margin-bottom: 5px;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
 }
 main #second-title {
   text-align: center;
@@ -29,6 +31,7 @@ main #second-title {
   font-style: italic;
   font-size: 1.3em;
   margin-top: 0;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
 }
 main form {
   background-color: rgba(41, 38, 64, 0.8);
@@ -37,12 +40,13 @@ main form {
   border-radius: 5px;
 }
 main form .text-form {
-  margin-bottom: 10px;
+  margin-bottom: 20px;
   width: 100%;
 }
 main form .text-form label {
   display: block;
   font-size: 20px;
+  margin-bottom: 10px;
 }
 main form .text-form input {
   width: 100%;
@@ -53,6 +57,7 @@ main form .text-form input {
   font-weight: 400;
   padding: 2%;
   box-sizing: border-box;
+  color: #706b6b;
 }
 main form .text-form input:focus {
   box-shadow: 0px 0px 3px 3px #2260ed;
@@ -70,11 +75,16 @@ main form .text-form select {
   background-color: #FFFFFF;
   color: #706b6b;
 }
+main form .text-form select:focus {
+  box-shadow: 0px 0px 3px 3px #2260ed;
+  outline: 0;
+}
 main form .radio-form {
-  margin-bottom: 10px;
+  margin-bottom: 20px;
 }
 main form .radio-form span {
   font-size: 20px;
+  margin-bottom: 10px;
 }
 main form .radio-form .radio-option {
   display: flex;
@@ -90,8 +100,12 @@ main form .radio-form .radio-option input {
   min-width: 20px;
   min-height: 20px;
 }
+main form .check-form {
+  margin-bottom: 20px;
+}
 main form .check-form p {
   font-size: 20px;
+  margin-bottom: 10px;
 }
 main form .check-form div {
   display: flex;
@@ -113,12 +127,19 @@ main form .comment-form {
 main form .comment-form span {
   display: block;
   font-size: 20px;
+  margin-bottom: 10px;
 }
 main form .comment-form textarea {
   width: 100%;
   box-sizing: border-box;
   padding: 2%;
   font-size: 16px;
+  border-radius: 5px;
+  color: #706b6b;
+}
+main form .comment-form textarea:focus {
+  box-shadow: 0px 0px 3px 3px #2260ed;
+  outline: 0;
 }
 main form .btn-submit {
   width: 100%;
