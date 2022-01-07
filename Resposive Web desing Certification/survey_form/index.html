@@ -10,21 +10,21 @@
 <body>
     <main>
         <h1>freeCodeCamp Survey Form</h1>
-        <p>Thank you for taking the time to help us improve the platform</p>
+        <p id="second-title">Thank you for taking the time to help us improve the platform</p>
         <form action="#">
-            <div>
+            <div class="text-form">
                 <label for="name">Name</label>
                 <input type="text" name="name" placeholder="Enter your name" id="name">
             </div>
-            <div>
+            <div class="text-form">
                 <label for="email">Email</label>
                 <input type="email" name="email" placeholder="Enter your Email" id="email">
             </div>
-            <div>
+            <div class="text-form">
                 <label for="age">Age <span>(optional)</span></label>
-                <input type="text" name="age" placeholder="Age" id="age">
+                <input type="number" name="age" placeholder="Age" id="age">
             </div>
-            <div>
+            <div class="text-form">
                 <label for="roles">Which option best describes your current role?</label>
                 <select name="roles" id="roles">
                     <option value="" disabled selected>Select current role</option>
@@ -35,22 +35,22 @@
                     <option value="other">Other</option>
                 </select>
             </div>
-            <div>
+            <div class="radio-form">
                 <span>Would you recommend freeCodeCamp to a friend?</span>
-                <div>
+                <div class="radio-option">
                     <label for="definitely">Definitely</label>
-                    <input type="radio" id="definitely" value="definitely">
+                    <input name="radio-options" type="radio" id="definitely" value="definitely" checked>
                 </div>
-                <div>
+                <div class="radio-option">
                     <label for="maybe">Maybe</label>
-                    <input type="radio" id="maybe" value="maybe">
+                    <input name="radio-options" type="radio" id="maybe" value="maybe">
                 </div>
-                <div>
+                <div class="radio-option">
                     <label for="notsure">Not sure</label>
-                    <input type="radio" id="notsure" value="notsure">
+                    <input name="radio-options" type="radio" id="notsure" value="notsure">
                 </div>
             </div>
-            <div>
+            <div class="text-form">
                 <label for="favorite_feature">What is your favorite feature of freeCodeCamp?</label>
                 <select name="favorite_feature" id="favorite_feature">
                     <option value="" disabled selected>Select an option</option>
@@ -60,7 +60,7 @@
                     <option value="openSource">Open Source</option>
                 </select>
             </div>
-            <div>
+            <div class="check-form">
                 <p>What would you like to see improved? <span>(Check all that apply)</span></p>
                 <div>
                     <label for="FrontEP">Front-end Projects</label>
@@ -107,11 +107,11 @@
                     <input type="checkbox" id="AdditionalC" value="AdditionalC">
                 </div>
             </div>
-            <div>
+            <div class="comment-form">
                 <span>Any comments or suggestions?</span>
-                <textarea name="comment" id="comment" cols="30" rows="10" placeholder="Enter your comment here..."></textarea>
+                <textarea name="comment" id="comment" cols="30" rows="5" placeholder="Enter your comment here..."></textarea>
             </div>
-            <input type="submit" value="Submit">
+            <input class="btn-submit" type="submit" value="Submit">
         </form>
     </main>
 </body>
