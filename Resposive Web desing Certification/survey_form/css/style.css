@@ -16,7 +16,7 @@ main {
   color: #FFFFFF;
   margin-top: 5%;
 }
-main h1 {
+main #title {
   font-weight: 400;
   font-size: 2.2em;
   text-align: center;
@@ -25,7 +25,7 @@ main h1 {
   margin-bottom: 5px;
   text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
 }
-main #second-title {
+main #description {
   text-align: center;
   font-weight: 300;
   font-style: italic;
@@ -33,22 +33,22 @@ main #second-title {
   margin-top: 0;
   text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
 }
-main form {
+main #survey-form {
   background-color: rgba(41, 38, 64, 0.8);
   padding: 50px;
   display: block;
   border-radius: 5px;
 }
-main form .text-form {
+main #survey-form .text-form {
   margin-bottom: 20px;
   width: 100%;
 }
-main form .text-form label {
+main #survey-form .text-form label {
   display: block;
   font-size: 20px;
   margin-bottom: 10px;
 }
-main form .text-form input {
+main #survey-form .text-form input {
   width: 100%;
   height: 40px;
   border-radius: 5px;
@@ -59,11 +59,11 @@ main form .text-form input {
   box-sizing: border-box;
   color: #706b6b;
 }
-main form .text-form input:focus {
+main #survey-form .text-form input:focus {
   box-shadow: 0px 0px 3px 3px #2260ed;
   outline: 0;
 }
-main form .text-form select {
+main #survey-form .text-form #dropdown, main #survey-form .text-form #favorite_feature {
   width: 100%;
   height: 40px;
   border-radius: 5px;
@@ -75,65 +75,65 @@ main form .text-form select {
   background-color: #FFFFFF;
   color: #706b6b;
 }
-main form .text-form select:focus {
+main #survey-form .text-form select:focus {
   box-shadow: 0px 0px 3px 3px #2260ed;
   outline: 0;
 }
-main form .radio-form {
+main #survey-form .radio-form {
   margin-bottom: 20px;
 }
-main form .radio-form span {
+main #survey-form .radio-form span {
   font-size: 20px;
   margin-bottom: 10px;
 }
-main form .radio-form .radio-option {
+main #survey-form .radio-form .radio-option {
   display: flex;
   width: 100%;
   margin-top: 10px;
 }
-main form .radio-form .radio-option label {
+main #survey-form .radio-form .radio-option label {
   order: 2;
   font-size: 20px;
   cursor: pointer;
 }
-main form .radio-form .radio-option input {
+main #survey-form .radio-form .radio-option input {
   align-self: center;
   min-width: 20px;
   min-height: 20px;
   cursor: pointer;
 }
-main form .check-form {
+main #survey-form .check-form {
   margin-bottom: 20px;
 }
-main form .check-form p {
+main #survey-form .check-form p {
   font-size: 20px;
   margin-bottom: 10px;
 }
-main form .check-form div {
+main #survey-form .check-form div {
   display: flex;
   width: 100%;
   margin-bottom: 10px;
 }
-main form .check-form div label {
+main #survey-form .check-form div label {
   order: 2;
   font-size: 20px;
   cursor: pointer;
 }
-main form .check-form div input {
+main #survey-form .check-form div input {
   align-self: center;
   min-width: 20px;
   min-height: 20px;
   cursor: pointer;
 }
-main form .comment-form {
+main #survey-form .comment-form {
   margin-bottom: 30px;
 }
-main form .comment-form span {
+main #survey-form .comment-form span {
   display: block;
   font-size: 20px;
   margin-bottom: 10px;
 }
-main form .comment-form textarea {
+main #survey-form .comment-form textarea {
   width: 100%;
   box-sizing: border-box;
   padding: 2%;
@@ -141,11 +141,11 @@ main form .comment-form textarea {
   border-radius: 5px;
   color: #706b6b;
 }
-main form .comment-form textarea:focus {
+main #survey-form .comment-form textarea:focus {
   box-shadow: 0px 0px 3px 3px #2260ed;
   outline: 0;
 }
-main form .btn-submit {
+main #survey-form .btn-submit {
   width: 100%;
   height: 50px;
   background-color: #1fc95be0;
@@ -155,7 +155,7 @@ main form .btn-submit {
   font-size: 1.3em;
   cursor: pointer;
 }
-main form .btn-submit:hover {
+main #survey-form .btn-submit:hover {
   background-color: transparent;
   border: 2px solid #1fc95be0;
   color: #1fc95be0;
