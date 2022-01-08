@@ -1,3 +1,174 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700&family=Roboto:wght@100;300;400;500&display=swap");
+:root {
+  --bg-main: #dbdbdb;
+  --text-1: #000000;
+  --bg-btn: #ffd400;
+  --bg-second: #c9c9c9;
+  --text-2: #646464;
+}
 
+body {
+  background-color: var(--bg-main);
+  margin: 0;
+  padding: 0;
+  font-family: "Lato", sans-serif;
+  font-family: "Roboto", sans-serif;
+}
+body .header {
+  display: flex;
+}
+body .header div:nth-child(1) {
+  width: 25%;
+  padding: 15px;
+  box-sizing: border-box;
+}
+body .header div:nth-child(1) img {
+  width: 100%;
+}
+body .header div:nth-child(2) {
+  width: 75%;
+  padding: 15px;
+  box-sizing: border-box;
+}
+body .header div:nth-child(2) ul {
+  display: flex;
+  justify-content: end;
+  list-style: none;
+}
+body .header div:nth-child(2) ul li {
+  width: 20%;
+  text-align: center;
+}
+body .header div:nth-child(2) ul li a {
+  text-decoration: none;
+  color: var(--text-1);
+}
+body main h1 {
+  text-align: center;
+  font-size: 25px;
+  font-weight: 500;
+}
+body main form {
+  margin-bottom: 10%;
+}
+body main form input {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+body main form #email {
+  width: 300px;
+  height: 25px;
+  box-sizing: border-box;
+  padding: 1%;
+  margin-bottom: 20px;
+}
+body main form #submit {
+  width: 150px;
+  height: 35px;
+  border: 0;
+  background-color: var(--bg-btn);
+  font-size: 16px;
+  font-weight: 700;
+}
+body main section {
+  display: flex;
+  width: 70%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 50px;
+}
+body main section div:nth-child(1) {
+  width: 15%;
+  font-size: 50px;
+  align-self: center;
+}
+body main section div:nth-child(1) i {
+  color: orange;
+}
+body main section div:nth-child(2) {
+  width: 85%;
+}
+body main section div:nth-child(2) h2 {
+  font-weight: 500;
+  margin: 0;
+}
+body main section div:nth-child(2) p {
+  margin: 0;
+}
+body main #video {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 75px;
+}
+body main .packs-ofert {
+  display: flex;
+  justify-content: center;
+}
+body main .packs-ofert div {
+  width: 23%;
+  height: 300px;
+  border: 1px solid #000000;
+  margin: 25px;
+  text-align: center;
+}
+body main .packs-ofert div span {
+  display: block;
+}
+body main .packs-ofert div .title-card {
+  background-color: var(--bg-second);
+  height: 15%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 20px;
+  font-weight: 500;
+}
+body main .packs-ofert div .price-card {
+  font-size: 25px;
+  font-weight: 500;
+  margin-top: 20px;
+}
+body main .packs-ofert div ul {
+  list-style: none;
+  padding: 0;
+}
+body main .packs-ofert div ul li {
+  margin-bottom: 10px;
+}
+body main .packs-ofert div .btn-select {
+  margin-top: 20px;
+  width: 100px;
+  height: 35px;
+  border: 0;
+  background-color: var(--bg-btn);
+  font-size: 16px;
+  font-weight: 700;
+}
+body footer {
+  width: 80%;
+  background-color: var(--bg-second);
+  margin-left: auto;
+  margin-right: auto;
+  height: 75px;
+  text-align: end;
+}
+body footer nav {
+  display: flex;
+  justify-content: end;
+  padding-top: 5px;
+}
+body footer nav span {
+  padding: 1%;
+}
+body footer nav span a {
+  text-decoration: none;
+  color: var(--text-1);
+}
+body footer #copy {
+  padding-right: 1%;
+  color: var(--text-2);
+}
 
 /*# sourceMappingURL=style.css.map */
