@@ -25,6 +25,12 @@ body #options div {
 }
 body #options div h1 {
   font-size: 30px;
+  font-weight: 400;
+  padding-left: 5%;
+  box-sizing: border-box;
+}
+body #options div h1:first-letter {
+  color: #ffe101;
 }
 body #options ul {
   list-style: none;
