@@ -1,6 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700&family=Roboto:wght@100;300;400;500&display=swap");
 :root {
   --text-1: rgb(104, 104, 104);
+  --text-2: rgb(181, 175, 175);
 }
 
 body {
@@ -46,6 +47,12 @@ body main .options ul li {
 body main .options ul li a {
   text-decoration: none;
   color: var(--text-1);
+}
+body main .options ul li:hover {
+  background-color: var(--text-2);
+}
+body main .options ul li:hover a {
+  color: white;
 }
 body main .sections {
   width: 78%;
