@@ -11,50 +11,46 @@ body {
   height: 100vh;
   font-family: "Lato", sans-serif;
   font-family: "Roboto", sans-serif;
-}
-body main {
   display: flex;
-  width: 100%;
 }
-body main .options {
+body #options {
   width: 22%;
   height: 100vh;
 }
-body main .options div {
-  position: fixed;
+body #options div {
   background-color: #FFFFFF;
-  width: 21%;
+  width: 100%;
   padding-left: 1%;
   box-sizing: border-box;
 }
-body main .options div h1 {
+body #options div h1 {
   font-size: 30px;
 }
-body main .options ul {
-  margin-top: 80px;
+body #options ul {
   list-style: none;
   padding: 0;
   height: 88vh;
   overflow-y: scroll;
 }
-body main .options ul li {
+body #options ul li {
   font-size: 18px;
   height: 55px;
   border-top: 1px solid #000000;
   padding: 5%;
   box-sizing: border-box;
 }
-body main .options ul li a {
+body #options ul li a {
   text-decoration: none;
   color: var(--text-1);
+  display: block;
 }
-body main .options ul li:hover {
+body #options ul li:hover {
   background-color: var(--text-2);
 }
-body main .options ul li:hover a {
+body #options ul li:hover a {
   color: white;
 }
-body main .sections {
+body #sections {
   width: 78%;
   height: 100vh;
   overflow-y: scroll;
@@ -63,29 +59,29 @@ body main .sections {
   padding-right: 3%;
   padding-top: 2%;
 }
-body main .sections h2 {
+body #sections h2 {
   font-weight: 400;
   font-size: 30px;
 }
-body main .sections p {
+body #sections p {
   padding-left: 3%;
   color: var(--text-1);
   font-weight: 400;
   line-height: 25px;
 }
-body main .sections li {
+body #sections li {
   color: var(--text-1);
   font-weight: 400;
   line-height: 30px;
 }
-body main .sections ul {
+body #sections ul {
   padding-left: 10%;
   box-sizing: border-box;
 }
-body main .sections ul li p {
+body #sections ul li p {
   padding: 0;
 }
-body main .sections pre {
+body #sections pre {
   background-color: #efeaea;
   border-radius: 5px;
   text-align: start;
@@ -94,8 +90,36 @@ body main .sections pre {
   box-sizing: border-box;
   margin-left: 5%;
 }
-body main .sections pre code {
+body #sections pre code {
   color: var(--text-1);
+}
+
+@media (max-width: 992px) {
+  #options {
+    width: 30% !important;
+  }
+
+  #sections {
+    width: 70% !important;
+  }
+}
+@media (max-width: 768px) {
+  body {
+    flex-wrap: wrap;
+  }
+  body #options {
+    width: 100% !important;
+    height: 40%;
+    border-bottom: 2px dashed #000000;
+  }
+  body #options ul {
+    height: 60%;
+  }
+  body #sections {
+    width: 100% !important;
+    height: 60%;
+    overflow-y: scroll;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
