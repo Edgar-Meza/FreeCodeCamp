@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700&family=Roboto:wght@100;300;400;500&display=swap');
+:root {
+    --text-1: rgb(104, 104, 104);
+}
+body {
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    height: 100vh;
+    font-family: 'Lato', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    main {
+        display: flex;
+        width: 100%;
+        .options {
+            width: 22%;
+            height: 100vh;
+            div {
+                position: fixed;
+                background-color: #FFFFFF;
+                width: 21%;
+                padding-left: 1%;
+                box-sizing: border-box;
+                h1 {
+                    font-size: 30px;
+                }
+            }
+            ul {
+                margin-top: 80px;
+                list-style: none;
+                padding: 0;
+                height: 88vh;
+                overflow-y: scroll;
+                li {
+                    font-size: 18px;
+                    height: 55px;
+                    border-top: 1px solid #000000;
+                    padding: 5%;
+                    box-sizing: border-box;
+                    a {
+                        text-decoration: none;
+                        color: var(--text-1)
+                    }
+                }
+            }
+        }
+        .sections {
+            width: 78%;
+            height: 100vh;
+            overflow-y: scroll;
+            box-sizing: border-box;
+            padding-left: 3%;
+            padding-right: 3%;
+            padding-top: 2%;
+            h2 {
+                font-weight: 400;
+                font-size: 30px;
+            }
+            p {
+                padding-left: 3%;
+                color: var(--text-1);
+                font-weight: 400;
+                line-height: 25px;
+            }
+            li {
+                color: var(--text-1);
+                font-weight: 400;
+                line-height: 30px;
+            }
+            ul {
+                padding-left: 10%;
+                box-sizing: border-box;
+                li {
+                    p {
+                        padding: 0;
+                    }
+                }
+            }
+            pre {
+                background-color: #efeaea;
+                border-radius: 5px;
+                text-align: start;
+                white-space: pre-line;
+                padding-left: 5%;
+                box-sizing: border-box;
+                margin-left: 5%;
+                code {
+                    color: var(--text-1);
+                }
+            }
+        }
+    }
+}
