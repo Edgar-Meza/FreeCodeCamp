@@ -33,7 +33,7 @@ body {
                 display: flex;
                 justify-content: end;
                 list-style: none;
-                .nav-link {
+                .nav-link-cont {
                     width: 20%;
                     text-align: center;
                     a {
@@ -41,7 +41,7 @@ body {
                         color: var(--text-1);
                     }
                 }
-                .nav-link:hover {
+                .nav-link-cont:hover {
                     transform: scale(1.5);
                 }
             }
@@ -192,7 +192,7 @@ body {
         #nav-bar {
             width: 50%!important;
             ul {
-                .nav-link {
+                .nav-link-cont {
                     width: auto!important;
                     margin-left: 20px;
                 }
@@ -231,13 +231,13 @@ body {
             ul {
                 flex-wrap: wrap;
                 padding: 0;
-                .nav-link {
+                .nav-link-cont {
                     width: 100%!important;
                     margin-left: auto;
                     margin-right: auto;
                     margin-bottom: 15px;
                 }
-                .nav-link:hover {
+                .nav-link-cont:hover {
                     background-color: var(--text-2);
                     a {
                         color: #FFFFFF;

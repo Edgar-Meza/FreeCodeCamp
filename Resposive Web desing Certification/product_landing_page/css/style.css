@@ -38,15 +38,15 @@ body #header #nav-bar ul {
   justify-content: end;
   list-style: none;
 }
-body #header #nav-bar ul .nav-link {
+body #header #nav-bar ul .nav-link-cont {
   width: 20%;
   text-align: center;
 }
-body #header #nav-bar ul .nav-link a {
+body #header #nav-bar ul .nav-link-cont a {
   text-decoration: none;
   color: var(--text-1);
 }
-body #header #nav-bar ul .nav-link:hover {
+body #header #nav-bar ul .nav-link-cont:hover {
   transform: scale(1.5);
 }
 body #header #menu {
@@ -192,7 +192,7 @@ body footer #copy {
   #header #nav-bar {
     width: 50% !important;
   }
-  #header #nav-bar ul .nav-link {
+  #header #nav-bar ul .nav-link-cont {
     width: auto !important;
     margin-left: 20px;
   }
@@ -232,16 +232,16 @@ body footer #copy {
     flex-wrap: wrap;
     padding: 0;
   }
-  #header #nav-bar ul .nav-link {
+  #header #nav-bar ul .nav-link-cont {
     width: 100% !important;
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 15px;
   }
-  #header #nav-bar ul .nav-link:hover {
+  #header #nav-bar ul .nav-link-cont:hover {
     background-color: var(--text-2);
   }
-  #header #nav-bar ul .nav-link:hover a {
+  #header #nav-bar ul .nav-link-cont:hover a {
     color: #FFFFFF;
   }
 
