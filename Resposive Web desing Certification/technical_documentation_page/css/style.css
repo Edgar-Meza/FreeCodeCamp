@@ -13,50 +13,50 @@ body {
   font-family: "Roboto", sans-serif;
   display: flex;
 }
-body #options {
+body #navbar {
   width: 22%;
   height: 100vh;
 }
-body #options div {
+body #navbar div {
   background-color: #FFFFFF;
   width: 100%;
   padding-left: 1%;
   box-sizing: border-box;
 }
-body #options div h1 {
+body #navbar div header {
   font-size: 30px;
   font-weight: 400;
   padding-left: 5%;
   box-sizing: border-box;
 }
-body #options div h1:first-letter {
+body #navbar div header:first-letter {
   color: #ffe101;
 }
-body #options ul {
+body #navbar ul {
   list-style: none;
   padding: 0;
   height: 88vh;
   overflow-y: scroll;
 }
-body #options ul li {
+body #navbar ul li {
   font-size: 18px;
   height: 55px;
   border-top: 1px solid #000000;
   padding: 5%;
   box-sizing: border-box;
 }
-body #options ul li a {
+body #navbar ul li a {
   text-decoration: none;
   color: var(--text-1);
   display: block;
 }
-body #options ul li:hover {
+body #navbar ul li:hover {
   background-color: var(--text-2);
 }
-body #options ul li:hover a {
+body #navbar ul li:hover a {
   color: white;
 }
-body #sections {
+body #main-doc {
   width: 78%;
   height: 100vh;
   overflow-y: scroll;
@@ -65,29 +65,29 @@ body #sections {
   padding-right: 3%;
   padding-top: 2%;
 }
-body #sections h2 {
+body #main-doc header {
   font-weight: 400;
   font-size: 30px;
 }
-body #sections p {
+body #main-doc p {
   padding-left: 3%;
   color: var(--text-1);
   font-weight: 400;
   line-height: 25px;
 }
-body #sections li {
+body #main-doc li {
   color: var(--text-1);
   font-weight: 400;
   line-height: 30px;
 }
-body #sections ul {
+body #main-doc ul {
   padding-left: 10%;
   box-sizing: border-box;
 }
-body #sections ul li p {
+body #main-doc ul li p {
   padding: 0;
 }
-body #sections pre {
+body #main-doc pre {
   background-color: #efeaea;
   border-radius: 5px;
   text-align: start;
@@ -96,16 +96,16 @@ body #sections pre {
   box-sizing: border-box;
   margin-left: 5%;
 }
-body #sections pre code {
+body #main-doc pre code {
   color: var(--text-1);
 }
 
 @media (max-width: 992px) {
-  #options {
+  #navbar {
     width: 30% !important;
   }
 
-  #sections {
+  #main-doc {
     width: 70% !important;
   }
 }
@@ -113,15 +113,15 @@ body #sections pre code {
   body {
     flex-wrap: wrap;
   }
-  body #options {
+  body #navbar {
     width: 100% !important;
     height: 40%;
     border-bottom: 2px dashed #000000;
   }
-  body #options ul {
+  body #navbar ul {
     height: 60%;
   }
-  body #sections {
+  body #main-doc {
     width: 100% !important;
     height: 60%;
     overflow-y: scroll;

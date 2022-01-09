@@ -11,7 +11,7 @@ body {
     font-family: 'Lato', sans-serif;
     font-family: 'Roboto', sans-serif;
     display: flex;
-    #options {
+    #navbar {
         width: 22%;
         height: 100vh;
         div {
@@ -19,14 +19,14 @@ body {
             width: 100%;
             padding-left: 1%;
             box-sizing: border-box;
-            h1 {
+            header {
                 font-size: 30px;
                 font-weight: 400;
                 padding-left: 5%;
                 box-sizing: border-box;
             
             }
-            h1:first-letter {
+            header:first-letter {
                 color: #ffe101;
             }
         }
@@ -55,7 +55,7 @@ body {
             }
         }
     }
-    #sections {
+    #main-doc {
         width: 78%;
         height: 100vh;
         overflow-y: scroll;
@@ -63,7 +63,7 @@ body {
         padding-left: 3%;
         padding-right: 3%;
         padding-top: 2%;
-        h2 {
+        header {
             font-weight: 400;
             font-size: 30px;
         }
@@ -103,17 +103,17 @@ body {
 }
 
 @media (max-width: 992px) {
-    #options {
+    #navbar {
         width: 30%!important;
     }
-    #sections {
+    #main-doc {
         width: 70%!important;
     }
 }
 @media (max-width: 768px) {
     body {
         flex-wrap: wrap;
-        #options {
+        #navbar {
             width: 100%!important;
             height: 40%;
             border-bottom: 2px dashed #000000;
@@ -121,7 +121,7 @@ body {
                 height: 60%;
             }
         }
-        #sections {
+        #main-doc{
             width: 100%!important;
             height: 60%;
             overflow-y: scroll;
