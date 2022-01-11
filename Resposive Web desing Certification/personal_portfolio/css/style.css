@@ -15,42 +15,48 @@ body {
 body .bar-top {
   background-color: var(--color-red);
   display: flex;
+  position: fixed;
+  width: 100%;
+  top: 0;
 }
-body .bar-top nav {
+body .bar-top #navbar {
   width: 100%;
 }
-body .bar-top nav ul {
+body .bar-top #navbar ul {
   display: flex;
   padding: 0;
   justify-content: end;
   list-style: none;
 }
-body .bar-top nav ul li {
+body .bar-top #navbar ul li {
   width: 100px;
   text-align: start;
 }
-body .bar-top nav ul li a {
+body .bar-top #navbar ul li a {
   color: white;
   font-size: 20px;
   font-weight: 500;
   text-decoration: none;
 }
-body main #header {
+body main {
+  margin-top: 40px;
+}
+body main #welcome-section {
   background: var(--color-gradient);
-  height: 80vh;
+  height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-flow: column;
 }
-body main #header header {
+body main #welcome-section h1 {
   width: 100%;
   text-align: center;
   font-size: 3em;
   color: white;
   font-weight: 500;
 }
-body main #header span {
+body main #welcome-section span {
   width: 100%;
   text-align: center;
   font-style: italic;

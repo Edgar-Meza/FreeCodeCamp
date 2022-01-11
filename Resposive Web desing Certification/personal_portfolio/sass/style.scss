@@ -13,7 +13,10 @@ body {
     .bar-top {
         background-color: var(--color-red);
         display: flex;
-        nav {
+        position: fixed;
+        width: 100%;
+        top: 0;
+        #navbar {
             width: 100%;
             ul {
                 display: flex;
@@ -34,14 +37,15 @@ body {
         }
     }
     main {
-        #header {
+        margin-top: 40px;
+        #welcome-section {
             background: var(--color-gradient);
-            height: 80vh;
+            height: 100vh;
             display: flex;
             justify-content: center;
             align-items: center;
             flex-flow: column;
-            header {
+            h1 {
                 width: 100%;
                 text-align: center;
                 font-size: 3em;
