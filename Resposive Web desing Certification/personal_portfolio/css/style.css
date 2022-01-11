@@ -2,8 +2,8 @@
 :root {
   --color-red: #ad3636;
   --color-gradient: linear-gradient(45deg,#4e4e4e, #403f3f, #323030);
-  --color-blue: #5252d9;
-  --color-gray: #383737;
+  --color-blue: #4e5aaf;
+  --color-gray: #424242;
 }
 
 body {
@@ -62,7 +62,7 @@ body main #projects {
   background-color: var(--color-blue);
   display: grid;
   justify-content: space-around;
-  grid-template-columns: repeat(3, 400px);
+  grid-template-columns: repeat(3, 30%);
   grid-template-rows: 60px repeat(2, 450px) 60px;
   grid-template-areas: "title title title" "project1 project2 project3" "project4 project5 project6" "more more more";
   row-gap: 40px;
@@ -189,9 +189,56 @@ body main #community div a {
   color: white;
   font-size: 3em;
   transition: transform 0.5s linear;
+  text-shadow: 2px 2px 2px #000000;
 }
 body main #community div a:hover {
   transform: translateY(10px);
+}
+body footer {
+  height: 15vh;
+  background-color: var(--color-gray);
+  display: flex;
+  justify-content: end;
+  padding-right: 20px;
+}
+body footer span {
+  align-self: center;
+  color: white;
+  font-size: 1.5em;
+}
+
+@media (max-width: 768px) {
+  #projects {
+    grid-template-columns: repeat(2, 40%) !important;
+    grid-template-rows: 60px repeat(3, 450px) 60px !important;
+    grid-template-areas: "title title" "project1 project2" "project3 project4" "project5 project6" "more more" !important;
+  }
+}
+@media (max-width: 576px) {
+  #projects {
+    grid-template-columns: 90% !important;
+    grid-template-rows: 60px repeat(6, 450px) 60px !important;
+    grid-template-areas: "title" "project1" "project2" "project3" "project4" "project5" "project6" "more" !important;
+  }
+  #projects header {
+    font-size: 2em !important;
+  }
+
+  #community header {
+    text-align: center;
+  }
+  #community div {
+    text-align: center;
+    flex-wrap: wrap;
+  }
+  #community div a {
+    width: 90%;
+    font-size: 2em !important;
+  }
+
+  footer {
+    justify-content: center !important;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
